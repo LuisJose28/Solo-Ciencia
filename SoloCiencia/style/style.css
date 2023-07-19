@@ -1,0 +1,531 @@
+/* CONFIGURACION PRINICPAL */
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0B1127;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Tipo de letra para toda la pagina */
+}
+
+h1, h2, h3, h4{
+    font-family:'Times New Roman', Times, serif; /* títulos con un tipo de letra diferente al del cuerpo de la página. */
+}
+
+form{
+    /* formularios con letra diferente al <body> de la página y un color de letra diferente.*/
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #9faeb4;
+}
+
+h2{
+    font-size: 42px;
+    text-align: center;
+    font-weight: 600;
+    color: #C3B5D8;
+}
+
+h3 {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 600;
+    color: #C7DAE1;
+}
+
+h4{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+    color: #C7DAE1;
+}
+
+
+/* PAGINA HOME */
+
+.header-division{
+    display: flex;
+    flex-direction: row; /* Para que lso elementos del header esten uno al lado del otro */
+    align-items: center;
+    justify-content: space-between;
+    background-color: #273065;
+    width: 100%; 
+    min-height: 24vh; /* Tamaño del header */
+
+}
+
+/* LOGO - contenedor 1*/
+#logo-1{
+    width: 20%; /* Para que del 100% del header solo ocupe el 20% */
+    text-align: center;
+}
+
+#logo-1 img{
+    width: 125px;
+    height: auto;
+    
+}
+
+
+/* Titulos-enlaces contenedor 2 */
+.titulo-enlaces-2{
+    width: 60%; /* Para que del 100% del header solo ocupe el 60% */
+}
+.titulo-enlaces-2 a{
+    text-decoration: none; /* Quitarle la decoracion a todos los enlaces dentro de este div */
+}
+
+.titulo-enlaces-2 h1{
+    font-size: 55px;
+    font-weight: 600;
+    text-align: center;
+    margin: 20px 0;
+
+    background: #ff0000; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #00ddff, #24adc2, #a714bb, #c309dc); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00ddff, #24adc2, #b938ca, #b11ec4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+}
+
+
+
+.menu-horizontal{
+    display: flex; /* Para que los elementos li esten uno al lado del otro */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-horizontal li{
+    list-style: none; /* Quitar las vieñetas */
+}
+
+.menu-horizontal li a{
+    display: block;
+    color: #C7DAE1;
+    font-size: 21px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+
+.menu-horizontal a:hover {
+    color: #007AFE;
+    transition: 0.5s;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    background-color: #1E2747;
+    padding: 12px; /* Que el contenido interior tenga espacio */
+    border-radius: 8px;
+}
+
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background-color: #151B31;
+    border-radius: 8px;
+}
+
+.menu-vertical li a{
+    font-size: 20px;
+    display: block;
+    color: #C7DAE1;
+    padding: 15px 15px 15px 20px;
+}
+
+
+/* Redes sociales - contenedor 3 */
+.busqueda-redes-3{
+    width: 20%; /* Para que del 100% del header solo ocupe el 20% */
+}
+
+.busqueda-redes-3 ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.busqueda-redes-3 li{
+    list-style: none;
+}
+
+.busqueda-redes-3 img{
+    width: 28px;
+    height: auto;
+}
+
+.icono-lupa{ /* Icono de la lupa junto a iconos de redes sociales */
+    font-size: 28px;
+    text-decoration: none;
+}
+
+/* Banner Pagina home */
+
+  
+.banner img {
+    width: 100%; 
+    height: auto;
+    box-shadow: 0 0 20px 0px rgba(47, 188, 209, 0.5); /* Sombra para la imagen */
+}
+
+.banner img {
+    width: 100%; 
+    height: auto;
+    box-shadow: 0 0 20px 0px rgba(47, 188, 209, 0.4); /* Sombra para la imagen */
+}
+
+
+
+/* Sección de videos */
+
+.videos-cientificos{
+    width: 80%;
+    margin: auto; /* Al poner un margin auto, se ajustara automaticamente al ancho que le hemos colocado */
+    padding-top: 80px; /* Espaciado superior para que no quede pegado al banner */
+}
+
+.fila {
+    margin-top: 4%; /* Separar las noticias del titulo */
+    display: flex;
+    flex-direction: row; /* Para que las noticias esten una al lado de otra */
+    justify-content: space-between;
+}
+
+.noticia-card {
+    flex-basis: 31%; /* Del 100, que cada elemento tenga un 31% del tamaño */
+    border-radius: 10px;
+    margin-bottom: 4%; /* Separacion con la proxima seccion */
+    padding: 20px 12px; /* Que el contenido de las cards tenga espacio */
+    transition: 0.5s;
+    background-color: #070b1b; 
+
+}
+
+.noticia-card:hover {
+    box-shadow: 0 0 20px 0px rgba(47, 188, 209, 5); /* Efecto al pararse en cada noticia */
+}
+
+.noticia-card iframe {
+    width: 100%;
+    border-radius: 10px;
+    border: none; /* Quita el borde del iframe */
+    display: block; /* Asegura que el iframe sea un elemento de bloque */
+    margin: 15px 0; /* Los elementos superiores e inferiores del iframe tengan espacio */
+}
+
+.noticia-card a {
+    color: #C7DAE1;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 18px;
+    color: #C7DAE1;    
+}
+
+.noticia-card a:hover {
+    color: #007AFE;
+    transition: 0.5s;   
+    font-weight: bold;
+    
+}
+
+.noticia-card p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 22px; /* Interlineado */;
+    text-align: center;
+    color: #C7DAE1;
+}
+
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    margin: auto; /* Al poner un margin auto, se ajustara automaticamente al ancho que le hemos colocado */
+    margin-top: 80px; /* Espaciado superior para que no quede pegado a la seccion anterior */
+    padding: 30px 0; /* Para que los elementos interiores del footer no esten pegados con el borde superior e inferior */
+    background-color: #050813;
+    color: #C7DAE1;
+}
+
+footer a{
+    color: #C7DAE1;
+    text-decoration: none;
+    padding: 10px; /* Que todos los links del footer tengan un relleno de 10px */
+    font-weight: bold;
+}
+
+footer a:hover{
+    color: #007AFE;
+    transition: 0.5s;   
+}
+
+footer li{
+    list-style: none;
+}
+
+.menu-secundario{
+    width: 80%; /* Que del 100% del footer. Solo se utilice un 80%*/
+    margin: auto;
+    
+}
+
+.menu-secundario hr{
+    border: none; /* Elimina el borde por defecto del elemento hr */
+    height: 1px; /* Ajusta la altura de la línea horizontal */
+    background-color: white; /* Establece el color de fondo de la línea horizontal */
+    margin: 10px 0; /* Ajusta el margen superior e inferior de la línea horizontal */
+}
+
+.nav-secundario ul{
+    display: flex;
+    justify-content: space-around; /* Espaciado horizontal entre los elementos de la lista */
+    
+}
+
+.menu-secundario-vertical{ 
+    display: flex;/* Para que los indices de "Registrase en cursos esten uno abajo del otro" */
+    flex-direction: column; /* Para que se ordenen en manera columna. Uno arriba del otro */
+    align-items: center; /* Centrar los elementos de manera vertical */
+    
+}
+
+.menu-secundario-vertical li{ 
+    margin-top: 15px; /* Darle espaciado superior a los subindices de Registrase en cursos */
+}
+
+.menu-secundario h4{
+    margin: 25px 0;
+    font-weight: bold;
+}
+
+.menu-secundario p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#boton-cerrarsesicon{
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+#boton-cerrarsesicon a {
+    display: inline-block; /* Convertimos el enlace en un elemento en línea con un bloque de contenido */
+    background-color: #23283c;
+    padding: 10px 20px; /* Relleno interior del botón */
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #C7DAE1;
+}
+
+#boton-cerrarsesicon a:hover {
+    color: #007AFE;
+}
+
+
+/* PAGINA DE CONTACTANOS */
+.integrantes{
+    width: 80%;
+    margin: auto; /* Al poner un margin auto, se ajustara automaticamente al ancho que le hemos colocado */
+    padding-top: 80px; /* Espaciado superior para que no quede pegado al banner */
+}
+
+.noticia-card img {
+    width: 100%; /* Que las imagenes ocupen todo el ancho posible de la card */
+    border-radius: 10px;
+    height: 350px;
+}
+
+.card-integrantes{
+    flex-basis: 45%;
+    text-align: center;
+}
+.card-integrantes p{
+    margin: 0 20px;/* Darle separacion horizontal para que no quede pegado a los bordes */
+    text-align: justify;
+    
+}
+
+.card-integrantes img, h3, h4, p{
+    margin: 10px 0; /* Los elementos superiores e inferiores del iframe tengan espacio */
+}
+
+#boton-volver-home {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+  
+  #boton-volver-home a {
+    display: inline-block; /* Convertimos el enlace en un elemento en línea con un bloque de contenido */
+    background-color: #23283c;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #c7dae1;
+    font-size: 30px; /* Cambiar el tamaño del fontawesome */
+}
+  
+  #boton-volver-home a:hover {
+    color: #007afe;
+}
+  
+
+/* PAGINA REGISTRASE CURSO CIENCIAS NATURALES - BIOLOGIA - PROGRAMACION*/
+.formulario-registro{
+    width: 80%;
+    margin: auto; /* Al poner un margin auto, se ajustara automaticamente al ancho que le hemos colocado */
+    padding-top: 80px; /* Espaciado superior para que no quede pegado al banner */
+}
+  
+form{
+    width: 45%;
+    margin: auto; /* Al poner un margin auto, se ajustara automaticamente al ancho que le hemos colocado */
+    background-color: #23283c;
+    padding: 10px 50px; /* Los elementos del form no esten pegados al borde */
+    margin-top: 40px; /* Tengan distancia con el titulo */
+    border-radius: 10px;
+}
+
+form h3{
+    margin-bottom: 20px; /* Los elementos no esten tan pegados al titulo */
+}
+
+.campo-entrada{
+    width: 65%;
+    background-color: #24303c;
+    color: white; /* Color de letra de los campos de entrada */
+    padding: 6px; /* Para que los formularios/campos de entrada tengan espacio y no se vean tan pequeños  */
+    border-radius: 4px;
+    margin-bottom: 10px; /* Para que los elementos tengan su respectivo espaciado uno del otro */
+    border: 2px solid #1f53c5;
+    outline: none;
+    font-size: 18px; /* Tamaño del texto dentro de los campos de entrada */
+}
+
+form label{
+    font-size: 22px;
+}
+
+form input{
+    margin-top: 8px; /* Que los campos de entrada esten separados de los titulos */
+}
+
+form:hover{
+    box-shadow: 0 0 20px 0px rgba(47, 188, 209, 0.5); /* Efecto al pararse en cada noticia */
+}
+
+.boton-registrase{
+    text-align: center; /* Centrar el boton  */
+}
+
+form button{
+    width: 50%;
+    background-color: #1f53c5;
+    border: none;
+    padding: 10px; /* Espaciado interno del boton */
+    color: white; /* Color del texto del boton */
+    margin: 16px 0; /* Espacio superior e inferior con respecto al boton. Para que este separado con el elemento superior y con el borde inferior */
+    font-size: 17px; /* Tamaño del texto del boton */
+    border-radius: 4px;
+}
+
+form button:hover{
+    background-color: white;    
+    color: #1f53c5;
+    transition: 0.5s;
+}
+
+
+
+/* PAGINA REFERENCIAS - TABLA PERIODICA */
+.referencias{
+    width: 80%;
+    margin: auto; /* Al poner un margin auto, se ajustara automaticamente al ancho que le hemos colocado */
+    padding-top: 80px; /* Espaciado superior para que no quede pegado al banner */
+}
+
+.referencias table{
+    width: 100%;/* Ocupara el 100% del ancho que tiene disponible la seccion */
+    border-collapse: collapse;/* Eliminar espacios entre celdas */
+    background-color: #23283c;
+    border-radius: 6px;   
+}
+
+.referencias caption{
+    margin-bottom: 40px; /* Que la tabla no este pegado al titulo */
+}
+
+table td a{ 
+    /* Para darle borde solo a los elementos de la tabla y NO a toda la tabla, aplicamos estilos a los elementos td que contienen los enlaces. table > td > a  */
+    padding: 10px; /* Que cada celda de la tabla tenga espaciado interior */
+    border: 1px solid #73757d;
+    text-align: center;
+    display: block; /* Cambia el comportamiento de los elementos <a> de estar en línea (por defecto) a ser bloques.  */
+}
+
+table tbody{ 
+    padding: 10px; /* Que cada celda de la tabla tenga espaciado interior */
+}
+
+table a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+table a:hover{
+    background-color: #031FA2;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.otros-no-metales{
+    background-color: #D0A8F5;
+}
+
+.alcalinos{
+    background-color: #FFDEAD;
+}
+
+.alcalinoterreos{
+    background-color: rgb(224, 203, 165);
+}
+
+.metales-transicion{
+    background-color: #ffff00;
+}
+
+.otros-metales{
+    background-color: #FFCC66;
+}
+
+.metaloides{
+    background-color: #81F781;
+}
+
+.halogenos{
+    background-color: #e928e9;
+}
+
+.gases-nobles{
+    background-color: #00ddff;
+}
+
+.lantanido-actinido{
+    background-color: #a4d7a4;
+}

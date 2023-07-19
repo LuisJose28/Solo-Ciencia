@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  padding: 3.8rem;
+  /* background: linear-gradient(90deg, rgba(30,157,176,1) 0%, rgba(97,76,128,1) 55%, rgba(197,100,221,1) 89%); */
+  background-image: url(../assets/imgs/pattern.jpg);
+  color: #333;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /* Tipo de letra para toda la pagina */
+}
+
+h1, h2, h3, h4{
+  font-family:'Times New Roman', Times, serif; /* títulos con un tipo de letra diferente al del cuerpo de la página. */
+}
+
+form{
+  /* formularios con letra diferente al <body> de la página y un color de letra diferente.*/
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #9faeb4;
+}
+
+h2{
+  text-align: center;
+  font-weight: 600;
+  color: #C3B5D8;
+}
+
+h3 {
+  font-size: 26px;
+  text-align: center;
+  font-weight: 600;
+  color: #C7DAE1;
+}
+
+h4{
+  font-size: 20px;
+  text-align: center;
+  font-weight: 300;
+  color: #C7DAE1;
+}
+
+
+.card {
+  background-color: #a0a0d3;
+  width: 45%;
+  margin: 0 auto;
+  min-height: 70vh;
+  border-radius: 0.5rem;
+}
+.card figure {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  width: 100%;
+}
+.card figure img {
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  width: 100%;
+}
+.card .form {
+  width: 100%;
+  padding: 4%;
+  text-align: center;
+}
+.card .form h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+}
+.card .form input,
+button {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.card .form input {
+  width: 50%;
+  background-color: #24303c;
+  color: white;
+
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  outline: none;
+}
+.card .form input:hover {
+  border: 2px solid #374b7d;
+  transition: 0.3s;
+}
+.card .form button {
+  width: 40%;
+  margin-top: 0.5rem;
+  background-color: #374b7d;
+  border: none;
+  padding: 0.6rem;
+  color: #c7dae1;
+  border-radius: 0.3rem;
+  font-weight: bold;
+}
+.card .form button:hover {
+  background-color: #c7dae1;
+  color: #273065;
+  transition: 0.9s;
+  cursor: pointer;
+}
+.card .link {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+.card .link a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #273065;
+}
+.card .link a:hover {
+  color: #273065c0;
+  text-decoration: underline;
+}

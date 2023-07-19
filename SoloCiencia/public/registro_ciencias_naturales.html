@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Ricardo Isaza, Luis Espinosa, Cristofer Jiménez, Johnny Cheng" />
+  <meta name="description" content="Página para registrarse en el curso de Ciencias Naturales de solociencia.com" />
+  <title>Solo Ciencia - Ciencias Naturales</title>
+  <link rel="stylesheet" href="../style/style.css" />
+  <link rel="icon" href="../assets/imgs/medical-laboratory.png" type="image/x-icon" />
+</head>
+
+<body>
+  <!-- Encabezado de la página -->
+  <header>
+    <div class="header-division">
+      <!-- logo -->
+      <figure id="logo-1">
+        <a href="./home.html">
+          <img src="../assets/imgs/logo.png" alt="Logo de solociencia.com" title="Logo de solociencia.com" loading="lazy"/>
+        </a>
+      </figure>
+
+      <!-- La parte derecha del encabezado -->
+      <div class="titulo-enlaces-2">
+        <div>
+          <!-- Titulo -->
+          <a href="./home.html">
+            <h1>SOLO CIENCIA</h1>
+          </a>
+        </div>
+
+        <!-- Menu principal -->
+        <nav aria-label="primary-nav">
+          <ul class="menu-horizontal">
+            <li><a href="./home.html">Home</a></li>
+
+            <li>
+              <a href="#">Registrarse en Cursos</a>
+              <ul class="menu-vertical">
+                <li>
+                  <a href="./registro_ciencias_naturales.html">Ciencias Naturales</a>
+                </li>
+                <li>
+                  <a href="./registro_quimica_biologia.html">Química y Biología</a>
+                </li>
+                <li>
+                  <a href="./registro_programacion.html">Programación</a>
+                </li>
+              </ul>
+            </li>
+
+            <li><a href="./referencias.html">Referencias</a></li>
+
+            <li><a href="./contacto.html">Contáctanos</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Enlaces para busqueda y redes sociales -->
+      <div class="busqueda-redes-3">
+        <ul>
+          <li>
+            <a href="https://www.google.com/" target="_blank" class="icono-lupa">&#128270;</a>
+          </li>
+
+          <li>
+            <a href="https://instagram.com/solociencia131?igshid=YmM0MjE2YWMzOA==" target="_blank"><img src="../assets/imgs/instagram.png" alt="Instagram"
+                width="20" height="20" loading="lazy" /></a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100094069068210" target="_blank"><img src="../assets/imgs/facebook.png" alt="Facebook"
+                width="20" height="20" loading="lazy" /></a>
+          </li>
+
+          <li>
+            <a href="https://twitter.com/SoloCiencia131" target="_blank"><img src="../assets/imgs/twitter.png" alt="Twitter"
+                width="20" height="20" loading="lazy" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido principal de la página -->
+  <main>
+
+    <!-- Sección de registro -->
+    <section class="formulario-registro">
+      <h2>Registro del curso de Ciencias Naturales</h2>
+
+      <!-- Formulario de registro -->
+      <form action="" method="post">
+        <h3>Formulario</h3>
+        
+        <p>
+          <label for="name">Nombre del participante:</label>
+          <br>
+          <input class="campo-entrada" type="text" id="name" name="name" required autofocus />
+        </p>
+
+        <p>
+          <label for="id-card">Cédula:</label>
+          <br>
+          <input class="campo-entrada" type="text" id="id-card" name="id_card" pattern="[A-Z0-9]{1,3}-[0-9]{1,6}-[0-9]{1,6}"
+            placeholder="x-xxx-xxx" required />
+        </p>
+
+        <p>
+          <label >Fecha de inicio del curso: </label>
+          <br/>
+          <input type="radio" name="start_date" id="date1" value="20 de julio" />
+          <label for="date1">20 de julio</label> <br />
+          <input type="radio" name="start_date" id="date2" value="24 de octubre" />
+          <label for="date2">24 de octubre</label> <br />
+          <input type="radio" name="start_date" id="date3" value="14 de noviembre" />
+          <label for="date3">14 de noviembre</label> <br />
+        </p>
+
+        <div class="boton-registrase">
+          <button>Registrarse</button>
+        </div>
+
+      </form>
+      
+    </section>
+
+  </main>
+
+  <!-- Pie de la página -->
+  <footer>
+
+    <!-- Menu secundario -->
+    <div class="menu-secundario">
+      
+      <h3>Páginas webs de Solo Ciencia</h3>
+      <hr>
+
+      <nav aria-label="secondary-nav" class="nav-secundario">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          
+          <li>
+            Registrarse en Cursos: 
+            <ul class="menu-secundario-vertical">
+              <li>
+                <a href="./registro_ciencias_naturales.html">Ciencias Naturales</a>
+              </li>
+              <li>
+                <a href="./registro_quimica_biologia.html">Química y Biología</a>
+              </li>
+              <li><a href="./registro_programacion.html">Programación</a></li>
+            </ul>
+          </li>
+          <li><a href="./referencias.html">Referencias</a></li>
+          <li><a href="./contacto.html">Contáctanos</a></li>
+        </ul>
+      </nav>
+      <!-- Mensaje de copy right  -->
+      <h4>Solo Ciencia &COPY; 2023 | Privacy policy</h4>
+      <!-- Enlace para cerrar sesión -->
+      <p id="boton-cerrarsesicon"><a href="./login.html">Cerrar sesión</a></p>
+      
+    </div>
+
+  </footer>
+  
+</body>
+
+</html>
